@@ -13,4 +13,4 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 popd
 rm -rf environment
-source ~/.zshrc
+zsh
