@@ -7,9 +7,9 @@ mkdir ~/.flamegraph
 mv FlameGraph/*.pl ~/.flamegraph/
 rm -rf FlameGraph
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-
-git clone https://github.com/denysdovhan/spaceship-prompt.git "~/.oh-my-zsh/custom/themes/spaceship-prompt"
-ln -s "~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme" "~/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source ~/.oh-my-zsh/templates/zshrc.zsh-template
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 popd
 rm -rf environment
