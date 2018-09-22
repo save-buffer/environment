@@ -5,14 +5,14 @@ git clone https://github.com/brendangregg/FlameGraph.git
 mkdir ~/.flamegraph
 mv FlameGraph/* ~/.flamegraph
 rm -r FlameGraph
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
-cp ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
 popd
 set dir=$(pwd)
 cd ..
 rm -r $dir
+zsh
