@@ -4,7 +4,7 @@ mv environment/.emacs ~/.emacs
 pushd ~
 git clone https://github.com/brendangregg/FlameGraph.git
 mkdir ~/.flamegraph
-mv FlameGraph/* ~/.flamegraph
+mv FlameGraph/*.pl ~/.flamegraph/
 rm -rf FlameGraph
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
