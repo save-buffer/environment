@@ -281,9 +281,9 @@
 ;(add-to-list 'default-frame-alist '(font . "Ubuntu Mono derivative Powerline-14"))
 ;(set-face-attribute 'default nil :font "Ubuntu Mono derivative Powerline-14")
 ;(set-frame-font "Ubuntu Mono derivative Powerline-14" nil t)
-(add-to-list 'default-frame-alist '(font . "Consolas-13"))
-(set-face-attribute 'default nil :font "Consolas-13")
-(set-frame-font "Consolas-13" nil t)
+;(add-to-list 'default-frame-alist '(font . "Consolas-13"))
+;(set-face-attribute 'default nil :font "Consolas-13")
+;(set-frame-font "Consolas-13" nil t)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 					;(set-face-foreground 'default "DarkGoldenrod3")
