@@ -146,3 +146,7 @@ function flamegraph
     perf script -i perf.data | ~/.flamegraph/stackcollapse-perf.pl | ~/.flamegraph/flamegraph.pl > flamegraph.svg
     rm perf.data
 }
+
+export attu="ssh -X samovar@attu.cs.washington.edu"
+export vergil="ssh -X samovar@vergil.u.washington.edu"
+export xor="ssh -X samovar@xor.cs.washington.edu"
