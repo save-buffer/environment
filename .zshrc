@@ -147,6 +147,6 @@ function flamegraph
     rm perf.data
 }
 
-export attu="ssh -X samovar@attu.cs.washington.edu"
-export vergil="ssh -X samovar@vergil.u.washington.edu"
-export xor="ssh -X samovar@xor.cs.washington.edu"
+alias attu="ssh -X samovar@attu.cs.washington.edu"
+alias vergil="ssh -X samovar@vergil.u.washington.edu"
+alias xor="ssh -X -p 425 samovar@xor.cs.washington.edu"
