@@ -507,9 +507,7 @@
 
   (font-lock-fontify-buffer))
 
-;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.jai\\'" . jai-mode))
-(add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
+
 
 (provide 'jai-mode)
 (custom-set-faces
@@ -520,3 +518,6 @@
  )
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.jai\\'" . jai-mode))
+(add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
+(global-auto-revert-mode t)
