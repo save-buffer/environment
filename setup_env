@@ -1,16 +1,15 @@
+pushd ~
+sh -c "$(wget -O- https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 git clone https://github.com/save-buffer/environment.git
 mv environment/.zshrc ~/.zshrc
 mv environment/.emacs ~/.emacs
-pushd ~
 git clone https://github.com/brendangregg/FlameGraph.git
 mkdir ~/.flamegraph
 mv FlameGraph/*.pl ~/.flamegraph/
 rm -rf FlameGraph
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-source ~/.oh-my-zsh/templates/zshrc.zsh-template
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-popd
 rm -rf environment
+popd
 zsh
