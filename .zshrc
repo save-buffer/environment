@@ -147,6 +147,7 @@ function flamegraph
     rm perf.data
 }
 
-alias attu="ssh -X samovar@attu.cs.washington.edu"
-alias vergil="ssh -X samovar@vergil.u.washington.edu"
-alias xor="ssh -X -p 425 samovar@xor.cs.washington.edu"
+alias attu="ssh -Y samovar@attu.cs.washington.edu"
+alias vergil="ssh -Y samovar@vergil.u.washington.edu"
+alias xor="ssh -Y samovar@xor.cs.washington.edu"
+alias kk9="ssh -Y samovar@kk9.cs.washington.edu"
