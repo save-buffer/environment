@@ -297,6 +297,7 @@
 (set-face-foreground 'font-lock-keyword-face "#569CD6")
 (set-face-foreground 'font-lock-constant-face "#BD63C5")
 (set-face-foreground 'font-lock-function-name-face "#4EC7B0")
+(set-face-foreground 'minibuffer-prompt "#55BBFF")
 
 (set-background-color "#1E1E1E")
 
