@@ -60,13 +60,13 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    colored-man
-    colorized
+    colored-man-pages
+    colorize
     github
     osx
     web-search
-    zsh-syntax-highlighting
-    zsh-completions
+    emacs
+    python
 )
 
 source $ZSH/oh-my-zsh.sh
