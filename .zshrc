@@ -150,4 +150,4 @@ function flamegraph
 alias attu="ssh -Y samovar@attu.cs.washington.edu"
 alias vergil="ssh -Y samovar@vergil.u.washington.edu"
 alias xor="ssh -Y samovar@xor.cs.washington.edu"
-alias kk9="ssh -Y samovar@kk9.cs.washington.edu"
+alias kk9="ssh -A -t samovar@attu.cs.washington.edu ssh -A -t -p ADD_THE_PORT samovar@kk9.cs.washington.edu"
