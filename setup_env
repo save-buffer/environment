@@ -4,6 +4,7 @@ source ~/.zshrc
 git clone https://github.com/save-buffer/environment.git
 mv environment/.zshrc ~/.zshrc
 mv environment/.emacs ~/.emacs
+mv environment/.alacritty.yml ~/.alacritty.yml
 git clone https://github.com/brendangregg/FlameGraph.git
 mkdir ~/.flamegraph
 mv FlameGraph/*.pl ~/.flamegraph/
