@@ -1,0 +1,13 @@
+(deftheme voltron "Voltron data theme")
+(custom-theme-set-faces 'voltron
+                        `(default ((t :foreground "#D9D8D6" :background "#121026")))
+                        `(cursor ((t :foreground "#005050")))
+                        `(font-lock-comment-face ((t :foreground "#337373")))
+                        `(font-lock-string-face ((t :foreground "#669696")))
+                        `(font-lock-variable-name-face ((t :foreground "#FCE8CE")))
+                        `(font-lock-constant-face ((t :foreground "#457EFF")))
+                        `(font-lock-type-face ((t :foreground "#3BD9FF")))
+                        `(font-lock-function-name-face ((t :foreground "#C440C3")))
+                        `(font-lock-keyword-face ((t :foreground "#8CFFAF")))
+                        )
+(provide-theme 'voltron)
