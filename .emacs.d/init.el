@@ -86,6 +86,16 @@
 (setq org-roam-directory (file-truename "~/org/notes"))
 (org-roam-db-autosync-mode)
 
+(require 'oc-csl)
+(use-package citar
+  :no-require
+  :custom
+  (org-cite-global-bibliography '("~/org/bibliography.bib"))
+  (org-cite-insert-processor 'citar)
+  (org-cite-follow-processor 'citar)
+  (org-cite-activate-processor 'citar)
+  (citar-bibliography org-cite-global-bibliography))
+
 (setq deft-recursive t)
 (setq deft-use-filter-string-for-name t)
 (setq deft-default-extension "org")
